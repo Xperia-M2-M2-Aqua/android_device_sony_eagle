@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/eagle/overlay
 
@@ -33,6 +34,11 @@ PRODUCT_PACKAGES += \
     init.recovery.eagle \
     init.eagle \
     ueventd.eagle
+
+# Recovery
+PRODUCT_PACKAGES += \
+    init_sony \
+    toybox_static
 
 # Sensors
 PRODUCT_COPY_FILES += \
