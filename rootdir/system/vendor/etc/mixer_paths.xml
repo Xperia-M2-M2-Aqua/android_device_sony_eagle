@@ -1059,10 +1059,6 @@
         <path name="handset-mic" />
     </path>
 
-    <path name="camcorder-mic">
-        <path name="handset-mic" />
-    </path>
-
     <path name="hdmi-tx">
         <path name="handset-mic" />
     </path>
@@ -1145,6 +1141,13 @@
 
     <path name="speaker-stereo-dmic-ef">
         <path name="speaker-dmic-endfire" />
+    </path>
+
+    <!-- experimental fix camcorder mic, DEC1=front DEC2=back -->
+    <path name="camcorder-mic">
+        <path name="dmic-endfire" />
+        <ctl name="DEC1 Volume" value="110" />
+        <ctl name="DEC2 Volume" value="110" />
     </path>
 
     <!-- Quad MIC devices -->
